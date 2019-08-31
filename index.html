@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Reconocimiento de imágenes</title>
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Reconocimiento de imágenes</a></li>
+          <li class="nav-item"><a href="web_cam_real_time.html" class="nav-link">Cámara web - Reconocimiento de imágenes</a></li>
+          <li class="nav-item"><a href="webcam_add_images_classification.html" class="nav-link">Crea tu clasificador de imágenes</a></li>
+        </ul>
+      </div>
+  </nav>
+
+  <div class="container" style="margin-top:20px">
+    <h1 align="center">
+      Tensorflow.js - Reconocimiento de imágenes
+    </h1>
+
+    <br></br>
+    
+    <p>
+        La siguiente página muestra una aplicación de la librería tensorflow.js para el reconocimiento de imágenes.
+        <li>Suba una imagen.</li>
+        <li>El modelo Deep Learning MobileNet predecirá la imagen subida.</li>
+    </p>
+
+
+    <br></br>
+    <input type="file" onchange="showFiles(event)" accept=".png, .jpg, .jpeg">
+    <br></br>
+    <center>
+    <img id='idImage' style="width: 224px; height: 224px;" align="center">
+    </center>
+
+    <!--<div id='console'></div>-->
+    <br></br>
+    <center><div id="chart_div"></div></center>
+    
+    <script src="index.js"></script>
+
+    <br></br>
+    <p>
+      El código se encuentra en: <a href="https://github.com/Jazielinho/tensorflow.js-image-recognition">https://github.com/Jazielinho/tensorflow.js-image-recognition</a>
+    </p>
+
+</body>
+</div>
+
+<script type="text/javascript">
+</script>
+</html>
